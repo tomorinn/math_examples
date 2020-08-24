@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title
+      | MathExamples
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  body
+    .header
+      .header__title
+        = link_to "例題でわかる中学数学", root_path
+
+    = yield
+
+    .footer
+      .footer__contact
