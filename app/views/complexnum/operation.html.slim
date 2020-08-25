@@ -1,0 +1,201 @@
+.example
+  .example__titles
+    h1.example__titles--title
+      |複素数
+    h2.example__titles--subtitle
+      |四則演算
+
+  .example__question
+    p.example__question--notice
+      |数式がうまく表示されない場合はリロードしてください
+    h2.example__question--title
+      |例題
+    .example__question--text
+      p.example__question--text-p
+        |次の式を計算し、
+        math
+          mi a
+          mo +
+          mi b
+          mi i
+        |の形で表わせ。
+      p.example__question--text-e
+        math
+          mfrac
+            mn 5
+            mrow
+              mn 2
+              mo +
+              mi i
+          mo +
+          mn 2
+          mi i
+
+
+  .example__answer
+    h2.example__answer--title
+      |解答
+    .example__answer--text
+      p.example__answer--text-p
+        math
+          mn 2
+          mo +
+          mi i
+
+  .example__detail
+    h2.example__detail--title
+      |考え方
+    .example__detail--text
+          p.example__detail--text-p
+            |まず
+            b
+              |分母の虚部を消す
+            |ために、共役な複素数をかける。この場合は
+            math
+              mn 2
+              mo +
+              mi i
+            |の共役な複素数なので
+            math
+              mn 2
+              mo -
+              mi i
+            |を分母分子にそれぞれかける。
+          p.example__detail--text-e
+            math
+              mfrac
+                mrow
+                  mn 5
+                  mfenced
+                    mrow
+                      mn 2
+                      mo -
+                      mi i
+                mrow
+                  mfenced
+                    mrow
+                      mn 2
+                      mo +
+                      mi i
+                  mfenced
+                    mrow
+                      mn 2
+                      mo -
+                      mi i
+              mo ＝
+              mfrac
+                mrow
+                  mn 5
+                  mfenced
+                    mrow
+                      mn 2
+                      mo -
+                      mi i
+                mrow
+                  mn 4
+                  mo +
+                  mn 1
+              mo ＝
+              mn 2
+              mo -
+              mi i
+
+          p.example__detail--text-p
+            |あとは
+            math
+              mn 2
+              mi i
+            |を足して、答えは
+            math
+              mn 2
+              mo +
+              mi i
+            |となる。<br><br>
+
+
+
+          p.example__detail--text-p
+            |複素数の加減算は、
+            b
+              |実部同士、虚部同士を加減
+            |する。
+          p.example__detail--text-p
+            math
+              mfenced
+                mrow
+                  mi a
+                  mo +
+                  mi b
+                  mi i
+              mo +
+              mfenced
+                mrow
+                  mi c
+                  mo +
+                  mi d
+                  mi i
+              mo ＝
+              mfenced
+                mrow
+                  mi a
+                  mo +
+                  mi c
+              mo +
+              mfenced
+                mrow
+                  mi b
+                  mo +
+                  mi d
+              mi i
+
+            p.example__detail--text-p
+              |複素数の積は、
+              math
+                mi a
+                mo +
+                mi b
+                mi i
+              |の形にして計算する。
+              b
+                |（展開の要領）
+            p.example__detail--text-p
+              math
+                mfenced
+                  mrow
+                    mi a
+                    mo +
+                    mi b
+                    mi i
+                mo ×
+                mfenced
+                  mrow
+                    mi c
+                    mo +
+                    mi d
+                    mi i
+                mo ＝
+                mi ac
+                mo +
+                mi ad
+                mi i
+                mo +
+                mi bc
+                mi i
+                mo +
+                mi bd
+                msup
+                  mi i
+                  mn 2
+                mo ＝
+                mfenced
+                  mrow
+                    mi ac
+                    mo -
+                    mi bd
+                mo +
+                mfenced
+                  mrow
+                    mi ad
+                    mo +
+                    mi bc
+                mi i

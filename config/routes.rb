@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   root "top#index"
   get "number/negative_number"
   get "complexnum/complex_number"
+  get "complexnum/operation"
 
 end

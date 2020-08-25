@@ -6,9 +6,6 @@ class ComplexnumController < ApplicationController
   def operation
   end
 
-  def oparation2
-  end
-
   def conjugate
   end
 
