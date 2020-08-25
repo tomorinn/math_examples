@@ -1,42 +1,56 @@
 // Place all the styles related to the number controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// #B478A7
+// #FB7B7F
+// #F9AA74
+// #FEE8B0
+// #8CCFDD
+$titleColor: #8CCFDD
+$pointColor: #F9AA74
+$accentColor: #B478A7
+$baseColor: #eeeeee
+
+
 html
-  font-size: 10px
   color: #474747
-// #FFC691
-// #C4EBBC
-// #DEE4FF
-// #D8C1BE
-// #FFFEB3
 b
-  background-color: #FFC691
-  padding: 1rem
+  background-color: $pointColor
+  padding: 0.3rem
+
 
 .example
-  padding: 10rem 0 0
+  padding: 5rem 0 0
   &__titles
     text-align: center
-    padding: 1rem
-    margin: 4rem
-    background: #f1f1f1
-    border-left: double 2rem #C4EBBC
-    border-right: double 2rem #C4EBBC
+    padding: 0.5rem
+    margin: 2rem
+    background: $baseColor
+    border-left: double 1rem $accentColor
+    border-right: double 1rem $accentColor
+    @media (min-width: 769px)
+      width: 40rem
+      margin: 4rem auto
     &--title
-      font-size: 7rem
-      margin: 2rem 0 0
+      font-size: 3rem
+      margin: 1rem 0 0
     &--subtitle
-      font-size: 4rem
+      font-size: 2rem
       margin: 0
   &__question, &__answer, &__detail
-    padding: 3rem
+    padding: 1rem
     &--title
-      font-size: 5rem
-      margin: 2rem 0 0
-      padding-left: 2rem
-      background: #f1f1f1
+      font-size: 2rem
+      margin: 1rem 0 0
+      padding-left: 1rem
+      background: $baseColor
+      @media (min-width: 769px)
+        width: 10rem
+        text-align: center
+        padding: 0
     &--text
-      padding: 3rem
+      padding: 1rem
       &-p
-        margin: 0 0 3rem
-        font-size: 3.2rem
+        font-size: 1.5rem
+        margin: 0 0 1rem

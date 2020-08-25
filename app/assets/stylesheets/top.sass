@@ -1,20 +1,30 @@
 // Place all the styles related to the top controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$titleColor: #8CCFDD
+$pointColor: #F9AA74
+$accentColor: #B478A7
+$baseColor: #eeeeee
 
 .top
-  padding-top: 10rem
+  padding-top: 5rem
   a
-    font-size: 5rem
+    font-size: 2rem
   &__index
-    &--year
-      font-size: 5rem
-      background-color: #bbe2f1
-      padding-left: 2rem
+    &--part
+      font-size: 2rem
+      background-color: $titleColor
+      padding-left: 1rem
+      margin: 1.5rem 0 0.5rem
+      @media (min-width: 769px)
+        width: 18rem
     &--examples
-      padding: 0 3rem
+      padding: 0 1rem
       display: flex
     &--example
-      margin: 1rem
-      padding: 2rem
-      background-color: #eee
+      margin: 0.5rem
+      padding: 0.7rem
+      background-color: $baseColor
+      @media (min-width: 769px)
+        &:hover
+          background-color: #ddd

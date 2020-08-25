@@ -7,10 +7,12 @@ html
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=MML_SVG"
+    meta name="viewport" content="width=device-width, initial-scale=1.0 "
   body
     .header
       .header__title
-        = link_to "例題でわかる中学数学", root_path
+        = link_to "例題でわかる複素関数論", root_path
 
     = yield
 

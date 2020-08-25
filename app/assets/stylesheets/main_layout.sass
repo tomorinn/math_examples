@@ -1,15 +1,21 @@
-// #FFC691
-// #C4EBBC
-// #DEE4FF
-// #D8C1BE
-// #FFFEB3
+
+// #B478A7
+// #FB7B7F
+// #F9AA74
+// #FEE8B0
+// #8CCFDD
+$titleColor: #8CCFDD
+$pointColor: #F9AA74
+$accentColor: #B478A7
+$baseColor: #eeeeee
 
 html
   font-size: 10px
 
+
 body
-  font-size: 10px
   margin: 0
+  -webkit-text-size-adjust: 100%
 
 a
   text-decoration: none
@@ -23,9 +29,12 @@ a
   position: fixed
   width: 100%
   top: 0
+  @media (min-width: 769px)
+    text-align: left
+    padding-left: 1rem
   &__title
-    font-size: 5rem
-    padding: 2rem 0
+    font-size: 2rem
+    padding: 1rem 0
 
 .footer
   background-color: #eee
