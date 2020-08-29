@@ -1,0 +1,90 @@
+.example
+  .example__titles
+    h1.example__titles--title
+      |複素関数
+    h2.example__titles--subtitle
+      |複素関数が微分可能か
+
+  .example__question
+    p.example__question--notice
+      |数式がうまく表示されない場合はリロードしてください
+    h2.example__question--title
+      |例題
+    .example__question--text
+      p.example__question--text-p
+        |以下の複素関数が
+        math
+          msub
+            mi z
+            mn 0
+        |で微分可能かを示せ。
+      p.example__question--text-p
+        |微分可能な場合、
+        math
+          mi f
+          mo &ApplyFunction;
+          mfenced
+            mrow
+              msub
+                mi z
+                mn 0
+        |を求めよ。
+      p.example__question--text-p
+        math
+          mfenced
+            mn 1
+          mi f
+          mo &ApplyFunction;
+          mfenced
+            mi z
+          mo ＝
+          msup
+            mi z
+            mn 2
+
+      p.example__question--text-p
+        math
+          mfenced
+            mn 2
+          mi f
+          mo &ApplyFunction;
+          mfenced
+            mi z
+          mo ＝
+          mover
+            mi z
+            mo _
+
+  .example__answer
+    h2.example__answer--title
+      |解答
+    .example__answer--text
+      p.example__answer--text-e
+        math
+          mfenced
+            mn 1
+        |微分可能。
+        math
+          mi f
+          mo &ApplyFunction;
+          mfenced
+            mrow
+              msub
+                mi z
+                mn 0
+          mo ＝
+          mn 2
+          msub
+            mi z
+            mn 0
+      p.example__answer--text-e
+        math
+          mfenced
+            mn 2
+        |微分不可能
+
+  .example__detail
+    h2.example__detail--title
+      |考え方
+    .example__detail--text
+          p.example__detail--text-p

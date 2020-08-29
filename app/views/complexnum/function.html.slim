@@ -1,0 +1,93 @@
+.example
+  .example__titles
+    h1.example__titles--title
+      |複素関数
+    h2.example__titles--subtitle
+      |複素関数の実部と虚部を求めよ
+
+  .example__question
+    p.example__question--notice
+      |数式がうまく表示されない場合はリロードしてください
+    h2.example__question--title
+      |例題
+    .example__question--text
+      p.example__question--text-p
+        |以下の複素関数の実部
+        math
+          mi u
+          mfenced
+            mrow
+              mi x
+              mi ,
+              mi y
+        |および虚部
+        math
+          mi v
+          mfenced
+            mrow
+              mi x
+              mi ,
+              mi y
+        |を求めよ。ただし、
+        math
+          mi z
+          mo ＝
+          mi x
+          mo +
+          mi y
+          mi i
+        |とする。
+      p.example__question--text-p
+        math
+          mi f
+          mo &ApplyFunction;
+          mfenced
+            mi z
+          mo ＝
+          msup
+            mi z
+            mn 2
+
+
+  .example__answer
+    h2.example__answer--title
+      |解答
+    .example__answer--text
+      p.example__answer--text-p
+        math
+          mi u
+          mfenced
+            mrow
+              mi x
+              mi ,
+              mi y
+          mo ＝
+          msup
+            mi x
+            mn 2
+          mo -
+          msup
+            mi y
+            mn 2
+      p.example__answer--text-p
+        math
+          mi v
+          mfenced
+            mrow
+              mi x
+              mi ,
+              mi y
+          mo ＝
+          mn 2
+          mi x
+          mi y
+
+
+
+
+
+  .example__detail
+    h2.example__detail--title
+      |考え方
+    .example__detail--text
+          p.example__detail--text-p
