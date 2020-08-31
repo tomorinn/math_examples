@@ -19,6 +19,13 @@ Rails.application.routes.draw do
   get "complexnum/differentiable"
   get "complexnum/regular"
   get "complexnum/harmonic"
+  get "complexnum/integral"
+  get "complexnum/circle"
+  get "complexnum/cauchy"
+  get "complexnum/cauchy_1"
+  get "complexnum/cauchy_2"
+  get "complexnum/laurent"
+  get "complexnum/laurent_2"
 
 
 end
