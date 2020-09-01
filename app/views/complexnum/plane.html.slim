@@ -39,4 +39,101 @@
     h2.example__detail--title
       |考え方
     .example__detail--text
-          p.example__detail--text-p
+      p.example__detail--text-p
+        |「
+        = link_to "極形式で表す", "polar", class: "top__index--example"
+        |」より、
+        math
+          mi z
+        |は以下のような極形式でかける。
+      p.example__detail--text-p
+        math
+          mi z
+          mo ＝
+          mn 2
+          mi cos
+          mfrac
+            mi &pi;
+            mn 6
+          mo +
+          mi i
+          mn 2
+          mi sin
+          mfrac
+            mi &pi;
+            mn 6
+      p.example__detail--text-p
+        |これは、
+        math
+          mi z
+        |を
+        b
+          |複素平面
+        |で描写したときの実軸との角度が
+        math
+          mfrac
+            mi &pi;
+            mn 6
+        |であり、原点からの距離が
+        math
+          mn 2
+        |であることと対応している。
+      p.example__detail--text-p
+        |この角度
+        math
+          mi &theta;
+          mo ＝
+          mfrac
+            mi &pi;
+            mn 6
+        |のことを
+        b
+          |偏角
+        |とよぶ。
+      p.example__detail--text-p
+        |ただし、
+        math
+          mfrac
+            mi &pi;
+            mn 6
+          mo +
+          mn 2
+          mi &pi;
+        |を偏角としても、
+        math
+          mi z
+        |は同じ値をとる。（sinやcosは
+        math
+          mn 2
+          mi &pi;
+        |周期である）
+      p.example__detail--text-p
+        |そこで、
+        math
+          mo -
+          mi &pi;
+          mi &lt;
+          mi &theta;
+          mi &le;
+          mi &pi;
+        |を満たす
+        math
+          mi &theta;
+        |を
+        b
+          |主値
+        |とよぶことになっており、
+        math
+          mi Arg
+          mi z
+        |と書くこともある。極形式の
+        math
+          mi &theta;
+        |も通常、主値を用いて記述する。
+      p.example__detail--text-p
+        |以上より、答えは
+        math
+          mfrac
+            mi &pi;
+            mn 6
+        |である。

@@ -32,7 +32,8 @@
             mn 2
           mi z
           mo ＝
-          mo 1
+          mo -
+          mn 1
 
   .example__answer
     h2.example__answer--title
@@ -62,9 +63,7 @@
             mi e
             mrow
               mi i
-              mfrac
-                mi i
-                mi &pi;
+              mo &pi;
 
 
 
@@ -72,4 +71,145 @@
     h2.example__detail--title
       |考え方
     .example__detail--text
-          p.example__detail--text-p
+      p.example__detail--text-p
+        |複素数
+        math
+          mi z
+        |を、
+        math
+          mi r
+          mi cos
+          mi &theta;
+          mo +
+          mi i
+          mi r
+          mi sin
+          mi &theta;
+        |の形で複素数を表したものを
+        b
+          |極形式
+        |という。（複素平面の図形的解釈と関連付けられている。）
+      p.example__detail--text-p
+        |また、
+        b
+          |オイラーの公式
+        |といって、
+        math
+          msup
+            mi e
+            mrow
+              mi i
+              mi &theta;
+          mo ＝
+          mi cos
+          mi &theta;
+          mo +
+          mi i
+          mi sin
+          mi &theta;
+        |が成り立つ。そのため、
+        math
+          mi z
+        |は、
+        math
+          mi r
+          msup
+            mi e
+            mrow
+              mi i
+              mi &theta;
+        |の形で表すこともできる。どちらも極形式である。
+      p.example__detail--text-p
+        math
+          mfenced
+            mn 1
+        |以下のように式変形をする。
+      p.example__detail--text-p
+        math
+          msqrt
+            mn 3
+          mo +
+          mi i
+          mo ＝
+          mn 2
+          mfenced
+            mrow
+              mfrac
+                mrow
+                  msqrt
+                    mn 3
+                mn 2
+              mo +
+              mi i
+              mfrac
+                mn 1
+                mn 2
+          mo ＝
+          mn 2
+          mfenced
+            mrow
+              mi cos
+              mfrac
+                mi &pi;
+                mn 6
+              mo +
+              mi i
+              mi sin
+              mfrac
+                mi &pi;
+                mn 6
+          mo ＝
+          mn 2
+          msup
+            mi e
+            mrow
+              mi i
+              mfrac
+                mi &pi;
+                mn 6
+      p.example__detail--text-p
+        |まず2で割ることにより、sinやcosに変換できる値にしている。この2は、
+        math
+          msqrt
+            mrow
+              msup
+                mrow
+                  msqrt
+                    mn 3
+                mn 2
+              mo +
+              msup
+                mn 1
+                mn 2
+          mo ＝
+          mn 2
+        |によって求めることができる。
+
+      p.example__detail--text-p
+        math
+          mfenced
+            mn 2
+        |以下のように式変形をする。
+      p.example__detail--text-p
+        math
+          mo -
+          mn 1
+          mo ＝
+          mo -
+          mn 1
+          mo +
+          mi i
+          mn 0
+          mo ＝
+          mi cos
+          mi &pi;
+          mo +
+          mi i
+          mi sin
+          mi &pi;
+          mo ＝
+          msup
+            mi e
+            mrow
+              mi i
+              mo &pi;

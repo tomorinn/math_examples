@@ -26,6 +26,7 @@ Rails.application.routes.draw do
   get "complexnum/cauchy_2"
   get "complexnum/laurent"
   get "complexnum/laurent_2"
+  get "complexnum/residue"
 
 
 end

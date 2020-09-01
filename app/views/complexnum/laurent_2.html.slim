@@ -3,7 +3,7 @@
     h1.example__titles--title
       |複素関数
     h2.example__titles--subtitle
-      |非正則を含むローラン展開
+      |ローラン展開その２
 
   .example__question
     p.example__question--notice
@@ -39,39 +39,51 @@
     .example__answer--text
       p.example__answer--text-p
         math
-          mi f
-          mo &ApplyFunction;
-          mfenced
-            mi z
-          mo ＝
+          mi |
+          mi z
+          mi |
+          mi &lt;
+          mn 1
+        |のとき、
+        math
+          munderover
+            mi &sum;
+            mrow
+              mi n
+              mo ＝
+              mn 0
+            mi &infin;
           msup
             mi z
-            mn 2
-          mo +
+            mi n
+      p.example__answer--text-p
+        math
+          mi |
           mi z
-          mo +
-          mfrac
-            mn 1
+          mi |
+          mi &gt;
+          mn 1
+        |のとき、
+        math
+          mo -
+          munderover
+            mi &sum;
             mrow
-              mn 2
-              mi !
-          mo +
-          mfrac
-            mn 1
-            mrow
-              mn 3
-              mi !
-              mi z
-          mo +
-          mi ...
-          mfenced
-            mrow
-              mi |
-              mi z
-              mi |
-              mi &gt;
+              mi n
+              mo ＝
               mn 0
-
+            mi &infin;
+          msup
+            mrow
+              mfenced
+                mrow
+                  mfrac
+                    mn 1
+                    mi z
+            mrow
+              mi n
+              mo +
+              mn 1
 
 
   .example__detail

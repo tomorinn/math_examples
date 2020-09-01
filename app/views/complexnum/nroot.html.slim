@@ -80,4 +80,205 @@
     h2.example__detail--title
       |考え方
     .example__detail--text
-          p.example__detail--text-p
+      p.example__detail--text-p
+        |n乗根について考えるときは、
+        math
+          mi z
+          mo ＝
+          mi r
+          msup
+            mi e
+            mrow
+              mi i
+              mi &theta;
+        |として考えると解きやすい。（ただし
+        math
+          mi r
+        |は
+        math
+          mi r
+          mo ＝
+          mi |
+          mi z
+          mi |
+        |であり、正である。）
+        b
+          |ド・モアブルの公式
+        |　
+        math
+          msup
+            mi z
+            mi n
+          mo ＝
+          mi cos
+          mi n
+          mi &theta;
+          mo +
+          mi i
+          mi sin
+          mi n
+          mi &theta;
+        |　より、
+        math
+          msup
+            mi z
+            mi n
+          mo ＝
+          msup
+            mi r
+            mi n
+          msup
+            mi e
+            mrow
+              mi i
+              mi n
+              mi &theta;
+        |であり、これを利用する。
+      p.example__detail--text-p
+        math
+          mfenced
+            mn 1
+        |上記を利用すると、もとめる複素数を
+        math
+          mi z
+        |とし、
+        math
+          msup
+            mi z
+            mn 2
+          mo ＝
+          msup
+            mi r
+            mn 2
+          msup
+            mi e
+            mrow
+              mi i
+              mn 2
+              mi &theta;
+        |と表せる。
+      p.example__detail--text-p
+        |ここで、「
+        = link_to "極形式で表す", "polar", class: "top__index--example"
+        |」を参考に
+        math
+          mi i
+        |の極形式を考えると
+        math
+          mi i
+          mo ＝
+          msup
+            mi e
+            mrow
+              mi i
+              mfrac
+                mi &pi;
+                mn 2
+        |となる。すなわち、
+        math
+          msup
+            mi r
+            mn 2
+          mo ＝
+          mn 1
+        |、
+        math
+          mn 2
+          mi &theta;
+          mo ＝
+          mfrac
+            mi &pi;
+            mn 2
+        |がわかる。
+      p.example__detail--text-p
+        |よってまず、
+        math
+         mi r
+         mo ＝
+         mn 1
+        |がわかる。（rは正であるため）
+      p.example__detail--text-p
+        |いま、2乗して
+        math
+          mi i
+        |になるすべての複素数を求めなければならないので、厳密には
+        math
+          mn 2
+          mi &theta;
+          mo ＝
+          mfrac
+            mi &pi;
+            mn 2
+          mo +
+          mn 2
+          mi n
+          mi &pi;
+        |であることに注意する。
+      p.example__detail--text-p
+        math
+          mi &theta;
+          mo ＝
+          mfrac
+            mi &pi;
+            mn 4
+          mo +
+          mi n
+          mi &pi;
+          mo ＝
+          mfrac
+            mi &pi;
+            mn 4
+          mi ,
+          mfrac
+            mrow
+              mn 5
+              mi &pi;
+            mn 4
+          mi ,
+          mfrac
+            mrow
+              mn 9
+              mi &pi;
+            mn 4
+          mi ...
+        |と求まる。ただし、この中には重複して同じ複素数が含まれているため、
+        math
+          mi &theta;
+        |が0から2πのもののみを考える。（-πからπなどでもよい）
+      p.example__detail--text-p
+        |よって、
+        math
+          mi z
+          mo ＝
+          msup
+            mi e
+            mrow
+              mi i
+              mfrac
+                mi &pi;
+                mn 4
+          mi ,
+          msup
+            mi e
+            mrow
+              mi i
+              mfrac
+                mrow
+                  mn 5
+                  mi &pi;
+                mn 4
+          mo ＝
+          mi &pm;
+          mfenced
+            mrow
+              mfrac
+                mn 1
+                mrow
+                  msqrt
+                    mn 2
+              mo +
+              mfrac
+                mi i
+                mrow
+                  msqrt
+                    mn 2
