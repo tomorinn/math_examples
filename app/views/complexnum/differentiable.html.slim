@@ -53,4 +53,148 @@
     h2.example__detail--title
       |考え方
     .example__detail--text
-          p.example__detail--text-p
+      p.example__detail--text-p
+        |「
+        = link_to "コーシー・リーマンの関係式", "cauchy_lehman", class: "top__index--example"
+        |」のように、コーシーリーマンの関係式を満たせば良い。この場合、
+      p.example__answer--text-p
+        math
+          mfrac
+            mrow
+              mi &part;
+              mi u
+            mrow
+              mi &part;
+              mi x
+          mo ＝
+          mn 2
+          mi x
+      p.example__answer--text-p
+        math
+          mfrac
+            mrow
+              mi &part;
+              mi v
+            mrow
+              mi &part;
+              mi y
+          mo ＝
+          mn 1
+      p.example__answer--text-p
+        math
+          mfrac
+            mrow
+              mi &part;
+              mi u
+            mrow
+              mi &part;
+              mi y
+          mo ＝
+          mn 0
+      p.example__answer--text-p
+        math
+          mfrac
+            mrow
+              mi &part;
+              mi v
+            mrow
+              mi &part;
+              mi x
+          mo ＝
+          mn 0
+      p.example__answer--text-p
+        |となる。よって、関係式をみたすには
+        math
+          mn 2
+          mi x
+          mo ＝
+          mn 1
+        |がなりたてばよく、
+        math
+          mi x
+          mo ＝
+          mfrac
+            mn 1
+            mn 2
+        |のとき微分可能である。
+      p.example__answer--text-p
+        |また、微分係数は
+        b
+          |コーシーリーマンによる微分公式
+        |から簡単に求められる。以下に式をしめす。
+      p.example__answer--text-p
+        math
+          mi f
+          mo &ApplyFunction;
+          mi '
+          mfenced
+            mi z
+          mo ＝
+          mfrac
+            mi &part;
+            mrow
+              mi &part;
+              mi x
+          mi f
+          mo &ApplyFunction;
+          mfenced
+            mi z
+          mo ＝
+          mo -
+          mi i
+          mfrac
+            mi &part;
+            mrow
+              mi &part;
+              mi y
+          mi f
+          mo &ApplyFunction;
+          mfenced
+            mi z
+      p.example__answer--text-p
+        |この式に代入して計算すると、微分係数は
+        math
+          mi f
+          mo &ApplyFunction;
+          mi '
+          mfenced
+            mi z
+          mo ＝
+          mfrac
+            mi &part;
+            mrow
+              mi &part;
+              mi x
+          mi f
+          mo &ApplyFunction;
+          mfenced
+            mi z
+          mo ＝
+          mfrac
+            mi &part;
+            mrow
+              mi &part;
+              mi x
+          mfenced
+            mrow
+              msup
+                mi x
+                mn 2
+              mo +
+              mi i
+              mi y
+          mo ＝
+          mn 2
+          mi x
+      p.example__answer--text-p
+        |ここに
+        math
+          mi x
+          mo ＝
+          mfrac
+            mn 1
+            mn 2
+        |を代入し、
+        math
+          mn 1
+        |が求まる。

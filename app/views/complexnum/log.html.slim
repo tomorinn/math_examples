@@ -21,7 +21,7 @@
     h2.example__answer--title
       |解答
     .example__answer--text
-      p.example__answer--text-e
+      p.example__answer--text-p
         math
           mi log
           mi z
@@ -39,4 +39,125 @@
     h2.example__detail--title
       |考え方
     .example__detail--text
-          p.example__detail--text-p
+      p.example__detail--text-p
+        math
+          mi w
+          mo ＝
+          mi log
+          mi z
+        |とおくと、
+        math
+          mi z
+          mo ＝
+          msup
+            mi e
+            mi w
+        |である。（logの定義より）
+      p.example__detail--text-p
+        |ここで、
+        math
+          mi z
+          mo ＝
+          mi r
+          msup
+            mi e
+            mrow
+              mi i
+              mi &theta;
+        |とし、これを
+        math
+          msup
+            mi e
+            mi w
+        |すなわち、（
+        math
+          mi w
+        |は複素数なので）
+        math
+          msup
+            mi e
+            mrow
+              mi u
+              mo +
+              mi i
+              mi v
+        |と比較することで、
+        math
+          mi w
+        |を求める。
+      p.example__detail--text-p
+        math
+          mi r
+          msup
+            mi e
+            mrow
+              mi i
+              mi &theta;
+          mo ＝
+          msup
+            mi e
+            mrow
+              mi u
+              mo +
+              mi i
+              mi v
+          mo ＝
+          msup
+            mi e
+            mi u
+          msup
+            mi e
+            mrow
+              mi i
+              mi v
+        |より、
+        math
+          mi r
+          mo ＝
+          msup
+            mi e
+            mi u
+        |かつ、
+        math
+          mi v
+          mo ＝
+          mi &theta;
+          mo +
+          mn 2
+          mi n
+          mi &pi;
+      p.example__detail--text-p
+        |以上より、
+        math
+          mi log
+          mi z
+          mo ＝
+          mi w
+          mo ＝
+          mi u
+          mo +
+          mi i
+          mi v
+          mo ＝
+          mi log
+          mi r
+          mo +
+          mi i
+          mfenced
+            mrow
+              mi &theta;
+              mo +
+              mn 2
+              mi n
+              mi &pi;
+        |<br class="spbr">
+        math
+          mo ＝
+          mi log
+          mi |
+          mi z
+          mi |
+          mo +
+          mi i
+          mi arg
+          mi z

@@ -23,6 +23,7 @@
         math
           mi f
           mo &ApplyFunction;
+          mo '
           mfenced
             mrow
               msub
@@ -42,24 +43,11 @@
             mi z
             mn 2
 
-      p.example__question--text-p
-        math
-          mfenced
-            mn 2
-          mi f
-          mo &ApplyFunction;
-          mfenced
-            mi z
-          mo ＝
-          mover
-            mi z
-            mo _
-
   .example__answer
     h2.example__answer--title
       |解答
     .example__answer--text
-      p.example__answer--text-e
+      p.example__answer--text-p
         math
           mfenced
             mn 1
@@ -67,6 +55,7 @@
         math
           mi f
           mo &ApplyFunction;
+          mo '
           mfenced
             mrow
               msub
@@ -77,14 +66,118 @@
           msub
             mi z
             mn 0
-      p.example__answer--text-e
-        math
-          mfenced
-            mn 2
-        |微分不可能
+
 
   .example__detail
     h2.example__detail--title
       |考え方
     .example__detail--text
-          p.example__detail--text-p
+      p.example__detail--text-p
+        math
+          mi f
+          mo &ApplyFunction;
+          mo '
+          mfenced
+            mrow
+              msub
+                mi z
+                mn 0
+          mo ＝
+          munder
+            mi lim
+            mrow
+              mi n
+              mo &#x2192;
+              mi &infin;
+          mfrac
+            mrow
+              mi f
+              mo &ApplyFunction;
+              mfenced
+                mi z
+              mo -
+              mi f
+              mo &ApplyFunction;
+              mfenced
+                msub
+                  mi z
+                  mn 0
+            mrow
+              mi z
+              mo -
+              msub
+                mi z
+                mn 0
+        |が一意に定まるとき、
+        math
+          mi f
+          mo &ApplyFunction;
+          mfenced
+            mi z
+        |は
+        b
+          |微分可能
+        |であるという。（
+        math
+          mi z
+        |をどのように
+        math
+          msub
+            mi z
+            mn 0
+        |に近づけても同じ値をとるということ）
+      p.example__detail--text-p
+        |いま、
+        math
+          mi f
+          mo &ApplyFunction;
+          mo '
+          mfenced
+            mrow
+              msub
+                mi z
+                mn 0
+          mo ＝
+          munder
+            mi lim
+            mrow
+              mi n
+              mo &#x2192;
+              mi &infin;
+          mfrac
+            mrow
+              msup
+                mi z
+                mn 2
+              mo -
+              msup
+                mrow
+                  msub
+                    mi z
+                    mn 0
+                mn 2
+            mrow
+              mi z
+              mo -
+              msub
+                mi z
+                mn 0
+          mo ＝
+          munder
+            mi lim
+            mrow
+              mi n
+              mo &#x2192;
+              mi &infin;
+          mi z
+          mo +
+          msub
+            mi z
+            mn 0
+          mo ＝
+          mn 2
+          msub
+            mi z
+            mn 0
+      p.example__detail--text-p
+        |一意に定まったため、微分可能であるとわかった。

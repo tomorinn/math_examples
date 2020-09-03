@@ -29,10 +29,182 @@
       |解答
     .example__answer--text
       p.example__answer--text-p
-        |満たす。
+        math
+          mi f
+          mo &ApplyFunction;
+          mfenced
+            mi z
+          mo ＝
+          msup
+            mi z
+            mn 2
+          mo ＝
+          msup
+            mi x
+            mn 2
+          mo +
+          mn 2
+          mi i
+          mi x
+          mi y
+          mo -
+          msup
+            mi y
+            mn 2
+        |より、実部を
+        math
+          mi u
+        |虚部を
+        math
+          mi v
+        |とおくと、
+      p.example__answer--text-p
+        math
+          mfrac
+            mrow
+              mi &part;
+              mi u
+            mrow
+              mi &part;
+              mi x
+          mo ＝
+          mn 2
+          mi x
+      p.example__answer--text-p
+        math
+          mfrac
+            mrow
+              mi &part;
+              mi v
+            mrow
+              mi &part;
+              mi y
+          mo ＝
+          mn 2
+          mi x
+      p.example__answer--text-p
+        math
+          mfrac
+            mrow
+              mi &part;
+              mi u
+            mrow
+              mi &part;
+              mi y
+          mo ＝
+          mo -
+          mn 2
+          mi y
+      p.example__answer--text-p
+        math
+          mfrac
+            mrow
+              mi &part;
+              mi v
+            mrow
+              mi &part;
+              mi x
+          mo ＝
+          mn 2
+          mi y
+      p.example__answer--text-p
+        |以上より、
+        math
+          mfrac
+            mrow
+              mi &part;
+              mi u
+            mrow
+              mi &part;
+              mi x
+          mo ＝
+          mfrac
+            mrow
+              mi &part;
+              mi v
+            mrow
+              mi &part;
+              mi y
+        |かつ
+        math
+          mfrac
+            mrow
+              mi &part;
+              mi u
+            mrow
+              mi &part;
+              mi y
+          mo ＝
+          mo -
+          mfrac
+            mrow
+              mi &part;
+              mi v
+            mrow
+              mi &part;
+              mi x
+        |であり、コーシーリーマンの関係式を満たす。
+
 
   .example__detail
     h2.example__detail--title
       |考え方
     .example__detail--text
-          p.example__detail--text-p
+      p.example__detail--text-p
+        math
+          mi f
+          mo &ApplyFunction;
+          mfenced
+            mi z
+          mo ＝
+          mi u
+          mfenced
+            mrow
+              mi x,y
+          mo +
+          mi i
+          mi v
+          mfenced
+            mrow
+              mi x,y
+        |が微分可能ならば、
+        math
+          mfrac
+            mrow
+              mi &part;
+              mi u
+            mrow
+              mi &part;
+              mi x
+          mo ＝
+          mfrac
+            mrow
+              mi &part;
+              mi v
+            mrow
+              mi &part;
+              mi y
+        |かつ
+        math
+          mfrac
+            mrow
+              mi &part;
+              mi u
+            mrow
+              mi &part;
+              mi y
+          mo ＝
+          mo -
+          mfrac
+            mrow
+              mi &part;
+              mi v
+            mrow
+              mi &part;
+              mi x
+        |である。
+      p.example__detail--text-p
+        |この関係式を、
+        b
+          |コーシーリーマンの関係式
+        |という。

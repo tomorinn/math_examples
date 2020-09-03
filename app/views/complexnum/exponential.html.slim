@@ -45,19 +45,19 @@
           mi y
         |を定数としたとき
       p.example__question--text-p
-        |の、xy平面上に現れる関数の写像の形を答えよ。
+        |の、xy平面上（複素平面上）に現れる関数の写像の形を答えよ。
 
   .example__answer
     h2.example__answer--title
       |解答
     .example__answer--text
-      p.example__answer--text-e
+      p.example__answer--text-p
         math
           mfenced
             mn 1
         |円
 
-      p.example__answer--text-e
+      p.example__answer--text-p
         math
           mfenced
             mn 2
@@ -69,4 +69,124 @@
     h2.example__detail--title
       |考え方
     .example__detail--text
-          p.example__detail--text-p
+      p.example__detail--text-p
+        math
+          mi f
+          mo &ApplyFunction;
+          mfenced
+            mi z
+          mo ＝
+          msup
+            mi e
+            mrow
+              mi x
+              mo +
+              mi y
+              mi i
+          mo ＝
+          msup
+            mi e
+            mi x
+          msup
+            mi e
+            mrow
+              mi i
+              mi y
+      p.example__detail--text-p
+        |ここで、オイラーの公式（
+        = link_to "極形式で表す", "polar", class: "top__index--example"
+        |に記載）を使うと、
+        math
+          msup
+            mi e
+            mi x
+          mfenced
+            mrow
+              mi cos
+              mi y
+              mo +
+              mi i
+              mi sin
+              mi y
+        |と表すことができる。
+      p.example__detail--text-p
+        math
+          mfenced
+            mn 1
+        math
+          mi x
+        |を定数
+        math
+          mi a
+        |とおくと、
+        math
+          msup
+            mi e
+            mi a
+          mfenced
+            mrow
+              mi cos
+              mi y
+              mo +
+              mi i
+              mi sin
+              mi y
+        |となり、これは定数
+        math
+          mi r
+        |を用いて
+        math
+          mi r
+          mfenced
+            mrow
+              mi cos
+              mi y
+              mo +
+              mi i
+              mi sin
+              mi y
+        |とかける。
+      p.example__detail--text-p
+        |すなわち、複素平面で考えると偏角のみ自由に動くため、円が描かれる。
+      p.example__detail--text-p
+        math
+          mfenced
+            mn 2
+        math
+          mi y
+        |を定数
+        math
+          mi b
+        |とおくと、
+        math
+          msup
+            mi e
+            mi x
+          mfenced
+            mrow
+              mi cos
+              mi b
+              mo +
+              mi i
+              mi sin
+              mi b
+        |となり、これは定数
+        math
+          mi &theta;
+        |を用いて
+        math
+          msup
+            mi e
+            mi x
+          mfenced
+            mrow
+              mi cos
+              mi &theta;
+              mo +
+              mi i
+              mi sin
+              mi &theta;
+        |とかける。
+      p.example__detail--text-p
+        |すなわち、複素平面で考えると偏角が固定されており、原点からの距離が正の範囲で自由に
+        |動くため、半直線が描かれる。

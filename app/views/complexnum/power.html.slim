@@ -3,7 +3,7 @@
     h1.example__titles--title
       |複素関数
     h2.example__titles--subtitle
-      |複素数の一般べき
+      |複素数の一般累乗（複素累乗）
 
   .example__question
     p.example__question--notice
@@ -11,6 +11,8 @@
     h2.example__question--title
       |例題
     .example__question--text
+      p.example__question--text-p
+        |以下の一般累乗（複素累乗）を求めよ。
       p.example__question--text-p
         math
           msup
@@ -39,4 +41,103 @@
     h2.example__detail--title
       |考え方
     .example__detail--text
-          p.example__detail--text-p
+      p.example__detail--text-p
+        |複素数における累乗、すなわち
+        b
+          |一般累乗
+        |もしくは
+        b
+          |複素累乗
+        |は、
+        math
+          mi a
+          mi ,
+          mi b
+        |を複素数とすると、
+      p.example__detail--text-e
+        math
+          msup
+            mi a
+            mi b
+          mo ＝
+          msup
+            mi e
+            mrow
+              mi b
+              mi log
+              mi a
+      p.example__detail--text-p
+        |と定義されている。よって、この問題は以下のようにかける。
+      p.example__detail--text-p
+        math
+          msup
+            mn 1
+            mrow
+              msqrt
+                mn 2
+          mo ＝
+          msup
+            mi e
+            mrow
+              msqrt
+                mn 2
+              mi log
+              mn 1
+      p.example__detail--text-p
+        |さらに、「
+        = link_to "複素数の対数関数", "log", class: "top__index--example"
+        |」より、
+        math
+          mn 1
+        |を複素数としてみてlogを整理すると、
+      p.example__detail--text-e
+        math
+          msup
+            mi e
+            mrow
+              msqrt
+                mn 2
+              mi log
+              mn 1
+          mo ＝
+          msup
+            mi e
+            mrow
+              msqrt
+                mn 2
+              mfenced
+                mrow
+                  mi log
+                  mi |
+                  mn 1
+                  mi |
+                  mo +
+                  mi i
+                  mi arg
+                  mn 1
+        |<br class="spbr">
+        math
+          mo ＝
+          msup
+            mi e
+            mrow
+              msqrt
+                mn 2
+              mfenced
+                mrow
+                  mn 0
+                  mo +
+                  mi i
+                  mn 2
+                  mi n
+                  mi &pi;
+          mo ＝
+          msup
+            mi e
+            mrow
+              mn 2
+              msqrt
+                mn 2
+              mi n
+              mi &pi;
+              mi i

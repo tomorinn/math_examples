@@ -86,4 +86,157 @@
     h2.example__detail--title
       |考え方
     .example__detail--text
-          p.example__detail--text-p
+      p.example__detail--text-p
+        |「
+        = link_to "複素関数の実部と虚部を求めよ", "function", class: "top__index--example"
+        |」と同様に、まず
+        math
+          mi x
+        |と
+        math
+          mi y
+        |で関数を表す。
+      p.example__detail--text-p
+        math
+          mi f
+          mo &ApplyFunction;
+          mfenced
+            mi z
+          mo ＝
+          mfrac
+            mn 1
+            mi z
+          mo ＝
+          mfrac
+            mn 1
+            mrow
+              mi x
+              mo +
+              mi y
+              mi i
+          mo ＝
+          mfrac
+            mrow
+              mi x
+              mo -
+              mi y
+              mi i
+            mrow
+              msup
+                mi x
+                mn 2
+              mo +
+              msup
+                mi y
+                mn 2
+          mo ＝
+          mfrac
+            mi x
+            mrow
+              msup
+                mi x
+                mn 2
+              mo +
+              msup
+                mi y
+                mn 2
+          mo -
+          mi i
+          mfrac
+            mi y
+            mrow
+              msup
+                mi x
+                mn 2
+              mo +
+              msup
+                mi y
+                mn 2
+      p.example__detail--text-p
+        |ここで、共役複素数（
+        = link_to "共役な複素数", "conjugate", class: "top__index--example"
+        |）を使い、
+        math
+          mi z
+          mo +
+          mover
+            mi z
+            mo _
+          mo ＝
+          mn 2
+          mi x
+        |、
+        math
+          mi z
+          mo -
+          mover
+            mi z
+            mo _
+          mo ＝
+          mn 2
+          mi i
+          mi y
+        |であることがわかる。
+      p.example__detail--text-p
+        |さらに、
+        math
+          mi z
+          mover
+            mi z
+            mo _
+          mo ＝
+          msup
+            mi x
+            mn 2
+          mo +
+          msup
+            mi y
+            mn 2
+        |となる。以上を組み合わせ、
+      p.example__detail--text-p
+        math
+          mi f
+          mo &ApplyFunction;
+          mfenced
+            mi z
+          mo ＝
+          mfrac
+            mrow
+              mi z
+              mo +
+              mover
+                mi z
+                mo _
+            mrow
+              mn 2
+              mi z
+              mover
+                mi z
+                mo _
+          mo +
+          mi i
+          mfrac
+            mrow
+              mover
+                mi z
+                mo _
+              mo -
+              mi z
+            mrow
+              mn 2
+              mi i
+              mi z
+              mover
+                mi z
+                mo _
+        |となるため、実部と虚部を
+        math
+          mi z
+        |のみで表すことができた。
+
+
+
+
+
+
+/ あ
