@@ -64,3 +64,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # slim
 gem 'slim-rails'
 gem 'html2slim'
+
+#Capistrano
+gem 'capistrano', '~> 3.12.0'
+gem 'capistrano-rails'
+gem 'capistrano-bundler'
+gem 'capistrano-rbenv', github: "capistrano/rbenv"
